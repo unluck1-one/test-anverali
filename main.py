@@ -105,6 +105,7 @@ def deleting(call):
     else:
         bot.edit_message_text("Задача удалена!", call.message.chat.id, call.message.id)
     finally:
+        bot.answer_callback_query(callback_query_id=call.id)
         cur.close()
         conn.close()
 
