@@ -108,4 +108,10 @@ def deleting(call):
         cur.close()
         conn.close()
 
-bot.polling(none_stop=True)
+if __name__ == '__main__':
+    while True:
+        try:
+            bot.polling(none_stop=True)
+        except Exception as e:
+            time.sleep(3)
+            print(e)
