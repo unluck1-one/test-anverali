@@ -23,7 +23,7 @@
 
 CREATE TABLE tasks (
   id_tg BIGINT NOT NULL,
-  task VARCHAR(64) NOT NULL
+  name_task VARCHAR(64) NOT NULL
 )
 
 Нажать F5
