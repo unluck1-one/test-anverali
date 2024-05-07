@@ -19,7 +19,7 @@
 
 В файле config.py поменяйте YOUR_TOKEN на токен из BotFather и данные от БД вставить свои.
 
-В консоль БД нужно добавить нужные колонки:
+В консоль БД нужно добавить нужные колонки. Ввести в консоль PostgreSQL:
 
 CREATE TABLE tasks (
   id_tg BIGINT NOT NULL,
